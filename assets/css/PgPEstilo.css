@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .login-btn {
+    background-color: #050505;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-box {
+    width: 25%;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-box:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-overlay .image-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .image-overlay .image-description {
+    font-size: 14px;
+  }
+
+
+  .image-trigger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .trigger-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .sliding-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ccc;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+  }
+  
+  .panel-content {
+    padding: 20px;
+  }
+  
+  .image-trigger:hover + .sliding-panel {
+    transform: translateX(0);
+  }
+
+
+
+.nav-bar {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+  }
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.nav-bar a:hover {
+    color: #ccc;
+}
+
+
+
+
+/*Responsibe*/
+  @media (max-width: 600px) {
+    .image-box {
+        width: 40%;
+        margin: 20px;
+    }
+
+    .nav-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 95%;
+      }
+
+    
+      .image-overlay .image-description {
+        font-size: 12px;
+      }
+  }

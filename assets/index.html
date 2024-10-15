@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eriker</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <h1 class="titulo">Eriker Tejidos</h1>
+
+    <div class="container">
+        <form id="login-form">
+            <h2>Iniciar Sesion</h2>
+            <p>Ingrese su email y contraseña</p>
+            <input type="email"  class="form-control" id="email" name="email" placeholder="Correo electrónico">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+            <input type="submit" class="btn" value="Iniciar Sesion"> 
+           
+           <!--<a href="PgPrincipal.html"><button class="btn" id="login-btn">Iniciar sesion</button></a>-->
+            <p>¿No tienes una cuenta? <a href="#" id="register-link">Registrate</a></p>
+        </form>
+        
+        <form id="register-form" style="display: none;">
+            <h2>Crear cuenta</h2>
+            <p>Ingrese su email para registrarse</p>
+            <input type="email" class="form-control" id="register-email" placeholder="Correo electrónico">
+            <input type="submit" class="btn" value="Registrarse">
+            <p>¿Ya tienes una cuenta? <a href="#" id="login-link">Iniciar sesión</a></p>
+        </form>
+
+    </div>
+
+
+    <script src="js/login-regist.js"></script>
+    <script src="js/index.js"></script> 
+</body>
+</html>

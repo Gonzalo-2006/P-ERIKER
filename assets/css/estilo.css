@@ -1,0 +1,78 @@
+.titulo{
+    text-align: center;
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+.container h2{
+    text-align: center;
+}
+
+form p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.form-control {
+    width: 100%;
+    max-width: 580px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.btn {
+    width: 100% ;
+    background-color: #050505;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+
+}
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+
+
+/*Resposib*/
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 40px;
+    }
+ 
+    .form-control {
+        width: 100%;
+        max-width: 295px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        display: block;
+    }
+
+    .titulo{
+        text-align: center;
+        padding: 40px 50px;
+    }
+    
+}
